@@ -50,5 +50,5 @@ You already has a profile README, if you don't, check this [Managing your profil
     ![](./assets/run-workflow.png)
 
 - Get those output and put into profile README
-  - profile-summary-card-output
+  - Check profile-summary-card-output folder in your REAME repo
     ![](./assets/output.png)
