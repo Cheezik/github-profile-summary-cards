@@ -1,6 +1,6 @@
 ## Requirement
 
-You already has a profile README, if you don't check this [Managing your profile README
+You already has a profile README, if you don't, check this [Managing your profile README
 ](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme)
 
 ## Let Start it
@@ -37,8 +37,8 @@ You already has a profile README, if you don't check this [Managing your profile
 
     ![](./assets/new-file.png)
 
-    - Commit it
-      ![](./assets/commit-file.png)
+  - Commit it
+    ![](./assets/commit-file.png)
 
 - Trigger workflow
 
