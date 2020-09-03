@@ -35,6 +35,8 @@ You already has a profile README, if you don't check this [Managing your profile
               USERNAME: ${{ github.repository_owner }}
     ```
 
+    ![](./assets/new-file.png)
+
     - Commit it
       ![](./assets/commit-file.png)
 
