@@ -7,19 +7,19 @@
 |      We create a Personal access token with permissions we need      |
 | :------------------------------------------------------------------: |
 |                          1. Find `Settings`                          |
-|                    ![](./assets/find-setting.PNG)                    |
+|                    ![](./assets/find-setting.png)                    |
 |                     2. Find `Developer Settings`                     |
-|              ![](./assets/find-developer-settings.PNG)               |
+|              ![](./assets/find-developer-settings.png)               |
 |                   3. Find `Personal access tokens`                   |
-|            ![](./assets/find-personal-access-tokens.PNG)             |
+|            ![](./assets/find-personal-access-tokens.png)             |
 |                 4. Press `Generate new token` button                 |
-|                 ![](./assets/generate-new-token.PNG)                 |
+|                 ![](./assets/generate-new-token.png)                 |
 |           5. Type access token name and check permissions            |
-|                    ![](./assets/create-token.PNG)                    |
+|                    ![](./assets/create-token.png)                    |
 |        6. Scroll to bottom and press `Generate token` button         |
-|               ![](./assets/generate-token-button.PNG)                |
+|               ![](./assets/generate-token-button.png)                |
 | 7. Then we get the token, copy the token value, we will use it later |
-|                  ![](./assets/copy-token-value.PNG)                  |
+|                  ![](./assets/copy-token-value.png)                  |
 
 ---
 
@@ -36,11 +36,11 @@
 |                   Open template page [github-profile-summary-cards-example](https://github.com/vn7n24fzkq/github-profile-summary-cards-example)                   |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                             Find and press `Use this template` button                                                             |
-|                                                               ![](./assets/press-use-template.PNG)                                                                |
+|                                                               ![](./assets/press-use-template.png)                                                                |
 | Type repository name then press `Create repository from template` button (If you want to create a Profile README repository then the name should be you username) |
-|                                                                 ![](./assets/type-repo-name.PNG)                                                                  |
+|                                                                 ![](./assets/type-repo-name.png)                                                                  |
 |                                                                   Now we have a new repository                                                                    |
-|                                                                    ![](./assets/new-repo.PNG)                                                                     |
+|                                                                    ![](./assets/new-repo.png)                                                                     |
 
 [Next Step](#add-personal-access-token-to-repo)
 
@@ -93,13 +93,13 @@ jobs:
 |                                   We are gonna use the personal token we early copy                                   |
 | :-------------------------------------------------------------------------------------------------------------------: |
 |                                             Find `Settings` in repository                                             |
-|                                         ![](./assets/find-repo-settings.PNG)                                          |
+|                                         ![](./assets/find-repo-settings.png)                                          |
 |                                          Find secrets in repository settings                                          |
-|                                            ![](./assets/find-secrets.PNG)                                             |
+|                                            ![](./assets/find-secrets.png)                                             |
 | Now, we type secret name you want and paste the personal access token as secret Value, then press `Add secret` button |
-|                                     ![](./assets/type-token-and-token-value.PNG)                                      |
+|                                     ![](./assets/type-token-and-token-value.png)                                      |
 |                                              It should has a secret here                                              |
-|                                           ![](./assets/secret-preview.PNG)                                            |
+|                                           ![](./assets/secret-preview.png)                                            |
 
 [Next Step](#change-github-action-token)
 
@@ -110,15 +110,15 @@ jobs:
 |                   We are almost done!                    |
 | :------------------------------------------------------: |
 |          Find the github action file just added          |
-|           ![](./assets/find-workflow-file.PNG)           |
+|           ![](./assets/find-workflow-file.png)           |
 |                And we do some modify this                |
-|             ![](./assets/edit-workflow.PNG)              |
+|             ![](./assets/edit-workflow.png)              |
 | Replace default GITHUB_TOKEN with the secret we jsut add |
-|               ![](./assets/old-secret.PNG)               |
+|               ![](./assets/old-secret.png)               |
 |                     With new secret                      |
-|              ![](./assets/new-secrect.PNG)               |
+|              ![](./assets/new-secrect.png)               |
 |                    Commit this change                    |
-|             ![](./assets/commit-secret.PNG)              |
+|             ![](./assets/commit-secret.png)              |
 
 [Next Step](#trigger-action)
 
@@ -131,7 +131,7 @@ jobs:
 |                         Run workflow manually                          |
 |                     ![](./assets/run-workflow.png)                     |
 | Wait workflow finish (You need to refresh page to see latest workflow) |
-|                     ![](./assets/run-workflow.PNG)                     |
+|                     ![](./assets/run-workflow.png)                     |
 
 [Next Step](#everything-are-finished!)
 
@@ -144,4 +144,4 @@ jobs:
 | Check profile-summary-card-output folder in your repo |
 |               ![](./assets/output.png)                |
 |                 :star: Finish :star:                  |
-|               ![](./assets/finish.PNG)                |
+|               ![](./assets/finish.png)                |
