@@ -78,7 +78,7 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
 ```
 
-|                 It should looks likt this one                 |
+|                 It should looks like this one                 |
 | :-----------------------------------------------------------: |
 |  <img src="./assets/new-file.png" height="800" width="700">   |
 |                      Then we commit file                      |
