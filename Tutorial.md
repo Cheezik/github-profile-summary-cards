@@ -23,9 +23,9 @@ This tutorial will help you deploy Github-profile-summary-cards with ease.
 
 
 2. Name your token
-(i'd recommend naming it something after `profile-summary-cards-token`) and ticking these boxes:
+(I'd recommend naming it something after `profile-summary-cards-token`) and ticking these boxes:
     
-3. And copy your token (**and dont lose it! you'd have to generate a new token**)
+3. And copy your token (**and don't lose it! You'd have to generate a new token**)
 
 
 <!--
@@ -40,33 +40,33 @@ user
 
 # Select a repo
 
-- If you want to add to already EXISTING repository.  [Next Step](#existing-repo)
+- If you want to add to an already EXISTING repository.  [Click here](#existing-repo)
   - (E.g. If you already have a README that shows up on your profile) 
-- If you want to create a brand NEW repository. [Next Step](#new-repo)
+- If you want to create a brand NEW repository. [Click here](#new-repo)
 
 
 ### New repo
-To Create a new repo from template:
+To Create a new repo from a template:
 1. Go to [Template link](https://github.com/vn7n24fzkq/github-profile-summary-cards-example)
-2. Click on "Use this template" button in the top right corner
-3. Select "Create a new template" and Name the repo as your username<br>(E.g. `FunnyUsername/FunnyUsername`, this popup should appear if you done it correctly)
-![this popup should appear if you done it correctly](/github-profile-summary-cards.wiki/assets_new/special_repo.png)
+2. Click on the "Use this template" button in the top right corner
+3. Select "Create a new template" and name the repo as your username<br>(E.g. `FunnyUsername/FunnyUsername`, this popup should appear if you've done it correctly)
+![this popup should appear if you've done it correctly](/assets_new/special_repo.png)
 4. You are good to go. lets continue
 
 ### Existing repo
 
 1. Add a README.md file **[if you dont have that file already]**
 2. Rename your repo to your username (E.g. `FunnyUsername/FunnyUsername`) **[if you havent already]**
-![this popup should appear if you done it correctly](/github-profile-summary-cards.wiki/assets_new/special_repo.png)
-3. Thats pretty much all. lets continue
+![this popup should appear if you've done it correctly](/assets_new/special_repo.png)
+3. That's pretty much all. lets continue
 
 
 # Create a workflow
 
 Now we will add a workflow to automatically update the summary cards.
 
-1. Navigate to repo's Actions -> New workflow -> Set up workflow yourself 
-2. Name your new workflow (i'd recommend naming it something after `profile-summary-cards`)
+1. Navigate to the repo's Actions -> New workflow -> Set up workflow yourself 
+2. Name your new workflow (I'd recommend naming it something after `profile-summary-cards`)
   * **Make sure you put `.yml` at the end!**
   
   Put this code snippet in:
@@ -97,7 +97,7 @@ jobs:
 4. **Commit changes!**
 ## Additional information
 
->Please note that workflow in current configuration will run every 24h (it will update every 24h) if you want to change it here is a ``cron's job definition``
+>Please note that the workflow in it's current configuration will run every 24h (it will update every 24h) if you want to change it here is a ``cron's job definition``
 
 ```# .---------------- minute (0 - 59)
 # |  .------------- hour (0 - 23)
@@ -108,33 +108,33 @@ jobs:
 # *  *  *  *  * 
 ```
 
-So lets say you want it to run every 15 hours: <br>
+So let's say you want it to run every 15 hours: <br>
 `- cron: "* */15 * * *"`
 
 Or for example you want it to run every friday at 12:35pm: <br>
 `- cron: "35 12 * * fri"`
 
-# Create Secret for Token
+# Create a Secret for Token
 
 1. Navigate to repo's Settings -> Secrets and variables -> Actions -> Repository secrets -> New repository secret
 
-2. Name your secret (again i'd suggest naming your secret as `summary_card_token` or simular) 
+2. Name your secret (again, I'd suggest naming your secret as `summary_card_token` or similar) 
 
 3. Past in your **Personal access token**. 
-  - in case you've lost it. please go back to [Generate token](#generate-token) and get a new one
+  - in case you've lost it. Please go back to [Generate token](#generate-token) and get a new one.
 
 4. **Copy that New secret's name!**
 
 # Edit workflow file
-Now we obtained the Secret we can move to the last step before deployment 🎉
+Now that we have obtained the Secret, we can move on the last step before deployment 🎉
 
-1. Navigate back to Code -> .github -> workflows -> `profile-summary-cards.yml` *(or customised name you gave to the .yml file)*
+1. Navigate back to Code -> .github -> workflows -> `profile-summary-cards.yml` *(or customized name you gave to the .yml file)*
 
-2. Hit the pencil icon at the right side of your screen
+2. Hit the pencil icon on the right side of your screen
 
 3. Edit the `[YOUR_SECRET_TOKEN_NAME]` inside the `GITHUB_TOKEN: ${{ secrets.[YOUR_SECRET_TOKEN_NAME] }}` with the Secret 
 
-- (Resault should look something like this: `GITHUB_TOKEN: ${{ secrets.SUMMARY_CARD_TOKEN }}`)
+- (Result should look something like this: `GITHUB_TOKEN: ${{ secrets.SUMMARY_CARD_TOKEN }}`)
 
 4. Commit changes
 
@@ -142,22 +142,22 @@ Now we obtained the Secret we can move to the last step before deployment 🎉
 
 1. Navigate to Actions -> on the left side `profile-summary-cards` -> hit the button `Run workflow` -> Run workflow
 
-2. Wait till the workflow run appears (if not refresh the site)
+2. Wait till the workflow run appears (if not, please refresh the site)
 
-    - its normal that the loading indicator "gets stuck" at a certant point, just refresh the page.
+    - its normal that the loading indicator "gets stuck" at a certain point, just refresh the page.
 
-3. If the loading indicators turn blue with a check inside, Congratuation! 
-    - if for some reason not, you've probably messed up somewhere (or this tutorial got outdated!) i recommand going from the begening again OR making a new repo and renaming it after you've succesfully managed to deploy this app.
+3. If the loading indicators turn blue with a check inside, congratulations! 
+    - if it for some reason wont, you've probably messed up somewhere (or this tutorial got outdated!) I recommend going from the beginning again OR making a new repo and renaming it after you've successfully managed to deploy this app.
 
 # Final step    
-You did you! now we are ready to chose the thme we want our cards to be in
+You did it! now we are ready to choose the theme we want our cards to be in
 1. Navigate to Code -> profile-summary-card-output -> Find the theme that suits you well -> README.md
 
-you can get really creative with the layout you want your cards to be in, but for simpicity sake, i will pick bundle
+You can get really creative with the layout you want your cards to be in, but for simplicity sake, I will pick a whole bundle
 
 2. Copy the desired markdown section.
 
-3. Navigate to Code -> Hit the pencil button on the right side of your README.md file
+3. Navigate to Code -> Hit on pencil button on the right side of your README.md file
 
 4. Paste in the copied content and hit Commit changes!
 
@@ -165,11 +165,11 @@ you can get really creative with the layout you want your cards to be in, but fo
 
 Now if everything went right. The cards should appear on your profile!
 
-Dont be afraid to experiment with themes! there are many that might suit you better.
+Don't be afraid to experiment with themes! There are many that might suit you better.
 
 ---
-Thats it guys, thank you for going trough this tutorial. i hope you found it somewhat helpfull. 
+That's it is guys. Thank you for going through this tutorial. I hope you found it somewhat helpful.
 
-if you find any typos/erros please open an issue so i can get on them asap.
+if you find any typos or erros please open an issue so I can get on them asap.
 
-Have a pleasent rest of your day ^^
+Have a pleasant rest of your day ^^
