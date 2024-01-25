@@ -49,14 +49,14 @@ user
 To Create a new repo from a template:
 1. Go to [Template link](https://github.com/vn7n24fzkq/github-profile-summary-cards-example)
 2. Click on the "Use this template" button in the top right corner
-3. Select "Create a new template" and name the repo as your username<br>(E.g. `FunnyUsername/FunnyUsername`, this popup should appear if you've done it correctly)
+3. Select "Create a new template" and name the repo as your username<br>(E.g. `FunnyUsername/FunnyUsername`, this popup should appear if you've done it correctly)<br>
 ![this popup should appear if you've done it correctly](/assets_new/special_repo.png)
 4. You are good to go. lets continue
 
 ### Existing repo
 
 1. Add a README.md file **[if you dont have that file already]**
-2. Rename your repo to your username (E.g. `FunnyUsername/FunnyUsername`) **[if you havent already]**
+2. Rename your repo to your username (E.g. `FunnyUsername/FunnyUsername`) **[if you havent already]** <br>
 ![this popup should appear if you've done it correctly](/assets_new/special_repo.png)
 3. That's pretty much all. lets continue
 
@@ -103,7 +103,8 @@ jobs:
 # |  .------------- hour (0 - 23)
 # |  |  .---------- day of month (1 - 31)
 # |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
-# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR                            # |  |  |  |  |     sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR
+# |  |  |  |  |     sun,mon,tue,wed,thu,fri,sat
 # |  |  |  |  |
 # *  *  *  *  * 
 ```
