@@ -22,9 +22,13 @@ This tutorial will help you deploy Github-profile-summary-cards with ease.
 1. Navigate to your profile's Settings -> Developer setting -> Personal access tokens -> Generate new token
 
 
+
 2. Name your token
 (I'd recommend naming it something after `profile-summary-cards-token`) and ticking these boxes:
-    
+
+
+<p align="center"> <img src="./assets_new/gen_user_pac.gif" alt="animated"> </p>
+
 3. And copy your token (**and don't lose it! You'd have to generate a new token**)
 
 
@@ -49,13 +53,18 @@ user
 To Create a new repo from a template:
 1. Go to [Template link](https://github.com/vn7n24fzkq/github-profile-summary-cards-example)
 2. Click on the "Use this template" button in the top right corner
-3. Select "Create a new template" and name the repo as your username<br>(E.g. `FunnyUsername/FunnyUsername`, this popup should appear if you've done it correctly)<br>
+3. Select "Create a new template" 
+
+<p align="center"> <img src="./assets_new/make_rep_f_tmp.gif" alt="animated"> </p>
+
+4. Name the repo as your username <br> (E.g. `FunnyUsername/FunnyUsername`, this popup should appear if you've done it correctly)
 ![this popup should appear if you've done it correctly](/assets_new/special_repo.png)
-4. You are good to go. lets continue
+5. You can ignore the next step.
 
 ### Existing repo
 
 1. Add a README.md file **[if you dont have that file already]**
+
 2. Rename your repo to your username (E.g. `FunnyUsername/FunnyUsername`) **[if you havent already]** <br>
 ![this popup should appear if you've done it correctly](/assets_new/special_repo.png)
 3. That's pretty much all. lets continue
@@ -68,9 +77,12 @@ Now we will add a workflow to automatically update the summary cards.
 1. Navigate to the repo's Actions -> New workflow -> Set up workflow yourself 
 2. Name your new workflow (I'd recommend naming it something after `profile-summary-cards`)
   * **Make sure you put `.yml` at the end!**
-  
-  Put this code snippet in:
 
+<p align="center"> <img src="./assets_new/create_n_wrkflw.gif" alt="animated"> </p>
+
+ 4. **Commit changes!**
+
+Code snippet:
   ```name: GitHub-Profile-Summary-Cards
 
 on:
@@ -94,7 +106,7 @@ jobs:
         with:
           USERNAME: ${{ github.repository_owner }}
 ```
-4. **Commit changes!**
+
 ## Additional information
 
 >Please note that the workflow in it's current configuration will run every 24h (it will update every 24h) if you want to change it here is a ``cron's job definition``
@@ -126,6 +138,9 @@ Or for example you want it to run every friday at 12:35pm: <br>
 
 4. **Copy that New secret's name!**
 
+
+<p align="center"> <img src="./assets_new/make_n_scrt.gif" alt="animated"> </p>
+
 # Edit workflow file
 Now that we have obtained the Secret, we can move on the last step before deployment 🎉
 
@@ -139,9 +154,16 @@ Now that we have obtained the Secret, we can move on the last step before deploy
 
 4. Commit changes
 
+
+<p align="center"> <img src="./assets_new/edit_wrkflw.gif" alt="animated"> </p>
+
+
 # Run the workflow
 
 1. Navigate to Actions -> on the left side `profile-summary-cards` -> hit the button `Run workflow` -> Run workflow
+
+
+<p align="center"> <img src="./assets_new/run_wrkflw.gif" alt="animated"> </p>
 
 2. Wait till the workflow run appears (if not, please refresh the site)
 
@@ -152,15 +174,18 @@ Now that we have obtained the Secret, we can move on the last step before deploy
 
 # Final step    
 You did it! now we are ready to choose the theme we want our cards to be in
-1. Navigate to Code -> profile-summary-card-output -> Find the theme that suits you well -> README.md
+1. Navigate to Code -> profile-summary-card-output -> Select a prefered theme -> README.md
 
-You can get really creative with the layout you want your cards to be in, but for simplicity sake, I will pick a whole bundle
+   -  You can get really creative with the layout you want your cards to be in, but for simplicity sake, I will pick a whole bundle
 
 2. Copy the desired markdown section.
 
 3. Navigate to Code -> Hit on pencil button on the right side of your README.md file
 
 4. Paste in the copied content and hit Commit changes!
+
+
+<p align="center"> <img src="./assets_new/edit_rdm.gif" alt="animated"> </p>
 
 # The end
 
