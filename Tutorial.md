@@ -59,7 +59,7 @@ To Create a new repo from a template:
 
 4. Name the repo as your username <br> (E.g. `FunnyUsername/FunnyUsername`, this popup should appear if you've done it correctly)
 <p align="left"> <img src="./assets_new/special_repo.png" alt="animated"> </p>
-5. You can ignore the next step.
+5. You can ignore the next sub-step.
 
 ### Existing repo
 
