@@ -61,8 +61,10 @@ To Create a new repo from a template:
 <p align="left"> <img src="./assets_new/special_repo.png" alt="animated"> </p>
 5. You can ignore the next sub-step.
 
-### Existing repo
 
+
+### Existing repo
+---
 1. Add a README.md file **[if you dont have that file already]**
 
 2. Rename your repo to your username (E.g. `FunnyUsername/FunnyUsername`) **[if you havent already]** <br>
