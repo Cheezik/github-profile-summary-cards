@@ -1,6 +1,6 @@
 # Let's get started!
 This tutorial will help you deploy Github-profile-summary-cards with ease. </br>
-*TO-DO!* If you have any issues regarding the gifs, you can find high res video verions [Here.](#INSERT_PATH_TO_VIDOES)
+ If you have any issues regarding the gifs, you can find high res video verions [Here.](/assets_new/Video_Full_Res/)
 
 ### Table of Contents
 1. [Generate token](#generate-token)
