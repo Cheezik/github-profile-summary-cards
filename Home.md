@@ -4,4 +4,5 @@ Welcome to the Github-profile-summary-cards wiki!
 
 
 Follow the tutorial [here](/Tutorial.md). <br>
-Explore the Legacy version [here](/Tutorial_legacy.md).
+Full resolution variants of gifs used in the tutorial are [here](/assets_new/Video_Full_Res/). <br>
+Explore the Legacy version [here](/Tutorial_legacy.md). <br>
