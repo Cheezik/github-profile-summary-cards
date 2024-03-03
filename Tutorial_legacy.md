@@ -1,7 +1,8 @@
-## Let's start
+## IMPORTANT! <br>
 
----
+This is LEGACY Version, New updated wiki can be found [Here.](https://github.com/vn7n24fzkq/github-profile-summary-cards/blob/2ff9431079624c2340e273cc14005fb26b44fad8/wiki/Tutorial.md)
 
+------
 ### First step
 
 |          We create a Personal access token with permissions we need           |
